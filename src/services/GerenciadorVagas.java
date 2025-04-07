@@ -1,4 +1,6 @@
-package Entities;
+package services;
+
+import Entities.VagaEstagio;
 
 import java.util.ArrayList;
 import java.util.List;

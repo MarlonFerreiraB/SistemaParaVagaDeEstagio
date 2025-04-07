@@ -2,7 +2,7 @@ package view;
 
 import services.GerenciadorAluno;
 import services.GerenciadorEmpresa;
-import Entities.GerenciadorVagas;
+import services.GerenciadorVagas;
 import Entities.Vaga;
 
 import java.util.Scanner;
