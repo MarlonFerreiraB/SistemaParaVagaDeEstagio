@@ -10,4 +10,13 @@ public class Vaga {
         this.valorDaBolsa = valorDaBolsa;
         this.cargaHoraria = cargaHoraria;
     }
+
+    @Override
+    public String toString() {
+        return "Vaga{" +
+                "cargo='" + cargo + '\'' +
+                ", valorDaBolsa=" + valorDaBolsa +
+                ", cargaHoraria=" + cargaHoraria +
+                '}';
+    }
 }
