@@ -19,13 +19,19 @@ public class Empresa {
     public Vaga[] getVaga() {
         return vaga;
     }
+
+
     @Override
     public String toString() {
-        return "Empresa{" +
-                "name='" + name + '\'' +
-                ", cnpj='" + cnpj + '\'' +
-                ", vagasDisponiveis=" + vaga +
-                '}';
+        System.out.println("Nome Empresa =" + name);
+        System.out.println("CNPJ Empresa =" + cnpj);
+        System.out.print("Vaga Empresa = ");
+        if(vaga != null && vaga.length>0){
+            for(Vaga v: vaga){
+                System.out.println(v);
+            }
+        }
+        return "Verificado";
     }
 
 }
