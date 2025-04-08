@@ -3,15 +3,21 @@ package Entities;
 public class VagaEstagio {
     private Aluno aluno;
     private Empresa empresa;
-    private Vaga vaga;
     private String dataDeInicio;
 
 
-    public VagaEstagio(Aluno aluno, Empresa empresa, Vaga vaga, String dataDeInicio) {
+    public VagaEstagio(Aluno aluno, Empresa empresa, String dataDeInicio) {
         this.aluno = aluno;
         this.empresa = empresa;
-        this.vaga = vaga;
         this.dataDeInicio = dataDeInicio;
+    }
+
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    public Empresa getEmpresa() {
+        return empresa;
     }
 
     @Override
@@ -19,7 +25,6 @@ public class VagaEstagio {
         return "VagaEstagio{" +
                 "aluno=" + aluno +
                 ", empresa=" + empresa +
-                ", vaga=" + vaga +
                 ", dataDeInicio='" + dataDeInicio + '\'' +
                 '}';
     }
